@@ -14,7 +14,7 @@ public class Foo {
     req(a, b, c);
     // throws IAE if any argument is null and provides custom exception msgs
     req(a, "A must not be null").notNull(b, "B must not be null").notNull(c, "C must not be null");
-    // throws IAE if string A is null or empty, if B is null or if c is false, custom msgs are optinal
+    // throws IAE if string A is null or empty, if B is null or if c is false, custom msgs are optional
     req().notNullOrEmpty(a, "A must not be empty").notNull(b, "B must not be null").tru(c);
   }
 }
